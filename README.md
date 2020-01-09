@@ -4,7 +4,10 @@ This is a library for basic user registration and authentication using the new F
 
 ## Installation
 
-Download the source files to a location of your choice.
+Download the source files to a location of your choice.\
+Make sure your system connects over a secure channel (SLL/TLS).\
+To make it work in a local environment additional steps may be necessary: 
+https://marmelab.com/blog/2019/01/23/https-in-development.html
 
 ## Using Rails 6 or above
 
