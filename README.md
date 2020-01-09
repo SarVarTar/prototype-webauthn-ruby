@@ -7,7 +7,8 @@ This is a library for basic user registration and authentication using the new F
 Download the source files to a location of your choice.\
 Make sure your system connects over a secure channel (SLL/TLS).\
 To make it work in a local environment additional steps may be necessary: 
-https://marmelab.com/blog/2019/01/23/https-in-development.html
+https://marmelab.com/blog/2019/01/23/https-in-development.html\
+This Demo uses Bootstrap, make sure to install properly.
 
 ## Using Rails 6 or above
 
@@ -15,11 +16,14 @@ Add this line to your application's Gemfile:
 ```ruby
 gem "prototype_webauthn", :git => "git://github.com/SarVarTar/prototype-webauthn-ruby.git"
 ```
-And then execute:\
+And then execute:
+```
     $ bundle
-
-to make sure your webpacker instance can interpret .erb files execute:\
+```
+to make sure your webpacker instance can interpret .erb files execute:
+```
     $ rails webpacker:install:erb
+```
 
 then add following lines to your ```application.js``` and rename it to ```application.js.erb```
 ```ruby
