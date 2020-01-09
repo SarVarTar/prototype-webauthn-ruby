@@ -13,7 +13,7 @@ https://marmelab.com/blog/2019/01/23/https-in-development.html
 
 Add this line to your application's Gemfile:
 ```ruby
-gem 'prototype_webauthn', path: 'path/to/folder'
+gem "prototype_webauthn", :git => "git://github.com/SarVarTar/prototype-webauthn-ruby.git"
 ```
 And then execute:\
     $ bundle
