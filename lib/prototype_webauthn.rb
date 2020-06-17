@@ -50,7 +50,7 @@ module PrototypeWebauthn
     # generates Javascript function call to communicate with the Authenticator
     def self.generate_js_call(email, rp_name, rp_domain, challenge, id, response_path)
       email = email.downcase
-      return "webauthn_create_credential(#{challenge.split("")}, '#{rp_name}', '#{rp_domain}', '#{id}', '#{email}', '#{email}', '#{response_path}');"
+      return "webauthn_create_credential(#{challenge.split("")}, '#{rp_name}', '#{rp_domain}', #{id.split("")}, '#{email}', '#{email}', '#{response_path}');"
     end
 
     # decodes and checks the Authenticator response and returns the result as hash
