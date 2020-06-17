@@ -16,7 +16,7 @@ webauthn_create_credential = function(challenge, rp_name, rp_id, user_id, user_n
       id: rp_id
     },
     user: {
-      id: new Uint8Array(user_id),
+      id: Uint8Array.from(user_id, c => c.charCodeAt(0)),
       name: user_email,
       displayName: user_name,
     },
